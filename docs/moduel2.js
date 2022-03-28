@@ -21,7 +21,7 @@
 
     const model = xktLoader.load({
         id: "myModel",
-        src: "https://xeokit.github.io/xeokit-sdk/assets/models/xkt/v7/Duplex/Duplex.xkt",
+        src: "https://gouthaman89.github.io/customeelement/docs/BH220211216.ifc.xkt",
         //metaModelSrc: "../assets/models/xkt/v7/MAP/MAP.json",
         edges: true,
         excludeUnclassifiedObjects: false
