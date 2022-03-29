@@ -9,7 +9,7 @@
     //------------------------------------------------------------------------------------------------------------------
 
     const viewer = new Viewer({
-        canvasId: "myCanvas",
+        canvasElement: "canvas",
         transparent: true
     });
 
