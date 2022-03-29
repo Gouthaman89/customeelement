@@ -1,8 +1,18 @@
 (function () {
+    let template = document.createElement("template");
+    template.innerHTML = `<canvas id="myCanvas" width="600" height="650"></canvas>`;
     class FGANTT extends HTMLElement {
       constructor() {
         super();
-        this.innerHTML =`<canvas  id="myCanvas" width="600" height="650"></canvas>`;
+            let shadowRoot = this.attachShadow({
+                mode: "open"
+            });
+            shadowRoot.appendChild(template.content.cloneNode(true));
+            this._props = undefined;
+            this._init = true;
+            this._firstUpdate = true;
+            this._firstResize = true;
+            this._selectionEvent = false;
 
       }
       connectedCallback() {
