@@ -12,21 +12,28 @@
         canvasId: "myCanvas",
         transparent: true
     });
+viewer.scene.camera.eye = [1841982.5187600704, 19.207790938410042, -5173303.042326414];
+    viewer.scene.camera.look = [1842011.793756829, 9.913817421536704, -5173299.841616623];
+    viewer.scene.camera.up = [0.2991762376746394, 0.9536370664170352, 0.0327096983532173];
 
-    //----------------------------------------------------------------------------------------------------------------------
-    // Add a NavCube
-    //----------------------------------------------------------------------------------------------------------------------
+    viewer.scene.xrayMaterial.fill = true;
+    viewer.scene.xrayMaterial.fillAlpha = 0.1;
+    viewer.scene.xrayMaterial.fillColor = [0, 0, 0];
+    viewer.scene.xrayMaterial.edgeAlpha = 0.2;
+    viewer.scene.xrayMaterial.edgeColor = [0, 0, 0];
 
-    new NavCubePlugin(viewer, {
-        canvasId: "myNavCubeCanvas",
-        visible: true,           // Initially visible (default)
-        size: 250,               // NavCube size in pixels (default is 200)
-        alignment: "topRight",   // Align NavCube to top-left of Viewer canvas
-        topMargin: 170,          // 170 pixels margin from top of Viewer canvas
-        cameraFly: true,       // Fly camera to each selected axis/diagonal
-        cameraFitFOV: 45,        // How much field-of-view the scene takes once camera has fitted it to view
-        cameraFlyDuration: 0.5 // How long (in seconds) camera takes to fly to each new axis/diagonal
-    });
+    viewer.scene.highlightMaterial.fill = true;
+    viewer.scene.highlightMaterial.edges = true;
+    viewer.scene.highlightMaterial.fillAlpha = 0.1;
+    viewer.scene.highlightMaterial.edgeAlpha = 0.1;
+    viewer.scene.highlightMaterial.edgeColor = [1, 1, 0];
+
+    viewer.cameraControl.followPointer = true;
+
+    const pivotElement = document.createRange().createContextualFragment("<div class='xeokit-camera-pivot-marker'></div>").firstChild;
+    document.body.appendChild(pivotElement);
+    viewer.cameraControl.pivotElement = pivotElement;
+
 
     //----------------------------------------------------------------------------------------------------------------------
     // Create a tree view
