@@ -2,7 +2,7 @@
     // Import the modules we need for this example
     //------------------------------------------------------------------------------------------------------------------
 
-    import {Viewer, XKTLoaderPlugin} from "https://gouthaman89.github.io/customeelement/docs/xeokit-sdk.min.es.js";
+    import {Viewer, XKTLoaderPlugin, AnnotationsPlugin} from "https://gouthaman89.github.io/customeelement/docs/xeokit-sdk.min.es.js";
 
     //------------------------------------------------------------------------------------------------------------------
     // Create a Viewer, arrange the camera
