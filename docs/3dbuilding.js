@@ -264,49 +264,8 @@
             z-index: 0;
             pointer-events: none;
         }
-    </style><canvas id="myCanvas" width="600" height="650"></canvas><canvas id="myNavCubeCanvas"></canvas>
-<div id="treeViewContainer"></div>
-<div class="slideout-sidebar">
-    <img class="info-icon" src="../assets/images/bim_icon.png"/>
-    <h1>XKTLoaderPlugin</h1>
-    <h2>Loading a double-precision BIM Model from the file system</h2>
-    <p>Geometry in this IFC model is placed at [1842022, 10, -5173301], which causes its coordinates to have
-        large values that rely on xeokit's double-precision precision support.</p>
-    <h3>Stats</h3>
-    <ul>
-        <li>
-            <div id="time">Loading JavaScript modules...</div>
-        </li>
-    </ul>
-    <h3>Components used</h3>
-    <ul>
-        <li>
-            <a href="../docs/class/src/viewer/Viewer.js~Viewer.html"
-               target="_other">Viewer</a>
-        </li>
-        <li>
-            <a href="../docs/class/src/plugins/XKTLoaderPlugin/XKTLoaderPlugin.js~XKTLoaderPlugin.html"
-               target="_other">XKTLoaderPlugin</a>
-        </li>
-        <li>
-            <a href="../docs/class/src/plugins/TreeViewPlugin/TreeViewPlugin.js~TreeViewPlugin.html"
-               target="_other">TreeViewPlugin</a>
-        </li>
-        <li>
-            <a href="../docs/class/src/extras/ContextMenu/ContextMenu.js~ContextMenu.html"
-               target="_other">ContextMenu</a>
-        </li>
-        <li>
-            <a href="../docs/class/src/plugins/NavCubePlugin/NavCubePlugin.js~NavCubePlugin.html"
-               target="_other">NavCubePlugin</a>
-        </li>
-    </ul>
-    <h3>Resources</h3>
-    <ul>
-        <li>Double-precision IFC model provided by <a href="https://bimdata.io" target="_other">BIMData.io</a>
-        </li>
-    </ul>
-</div>`;
+    </style><canvas id="myCanvas" width="600" height="650"></canvas>
+<div id="treeViewContainer"></div>`;
     class FGANTT extends HTMLElement {
       constructor() {
         super();
