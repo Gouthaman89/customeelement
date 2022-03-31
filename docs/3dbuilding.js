@@ -288,7 +288,9 @@
          onCustomWidgetAfterUpdate(changedProperties){
               var shadow =document.getElementsByTagName('com-demo-gauge');
          }
-        
+        onCustomWidgetAfterUpdate(changedProperties) {
+		 var shadow =document.getElementsByTagName('com-demo-gauge');
+	}
       connectedCallback() {
         var shadow =document.getElementsByTagName('com-demo-gauge');
         // var custelem = shadow.host;
