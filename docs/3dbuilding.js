@@ -264,8 +264,8 @@
             z-index: 0;
             pointer-events: none;
         }
-    </style><canvas id="myCanvas" width="600" height="650"></canvas>
-<div id="treeViewContainer"></div>`;
+    </style>
+    <canvas id="myCanvas" width="600" height="650"></canvas>`;
     class FGANTT extends HTMLElement {
       constructor() {
         super();
