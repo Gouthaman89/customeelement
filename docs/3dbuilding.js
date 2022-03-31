@@ -265,7 +265,9 @@
             pointer-events: none;
         }
     </style>
-    <canvas id="myCanvas" width="600" height="650"></canvas>`;
+    <canvas id="myCanvas" width="600" height="650"></canvas>
+    <div class="annotation-marker" style="background-color: green; visibility: hidden; left: 411px; top: 272px; z-index: 89933;">A1</div>
+    <div class="annotation-label" style="background-color: white; visibility: hidden; left: 463px; top: 267px; z-index: 89933;">            <div class="annotation-title">Wall</div>            <div class="annotation-desc">Need to have a look</div>            </div>`;
     class FGANTT extends HTMLElement {
       constructor() {
         super();
