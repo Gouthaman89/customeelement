@@ -273,7 +273,12 @@
                 mode: "open"
             });
             shadowRoot.appendChild(template.content.cloneNode(true));
-            this._props = undefined;
+          this.addEventListener("click", event => {
+				var event = new Event("onClick");
+				this.dispatchEvent(event);
+			});
+			
+			this._props = {};
             this._init = true;
             this._firstUpdate = true;
             this._firstResize = true;
