@@ -280,6 +280,10 @@
             this._selectionEvent = false;
 
       }
+         onCustomWidgetAfterUpdate(changedProperties){
+              var shadow =document.getElementsByTagName('com-demo-gauge');
+         }
+        
       connectedCallback() {
         var shadow =document.getElementsByTagName('com-demo-gauge');
         // var custelem = shadow.host;
