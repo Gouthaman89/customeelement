@@ -285,7 +285,7 @@
       }
        onCustomWidgetAfterUpdate(changedProperties) {
 		  var shadow =document.getElementsByTagName('com-demo-gauge');
-	       window.changedProperties = "changedProperties";
+	       window.changedProperties = changedProperties;
          let LoadLibs = async function(host, data, props) {
              try {
                   await host.loadScript1("https://gouthaman89.github.io/customeelement/docs/moduel2.js", shadow);
