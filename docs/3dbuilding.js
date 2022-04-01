@@ -297,7 +297,7 @@
          LoadLibs(this, this.$data, this._props);
         this._init = false;
 	}
-      connectedCallback() {
+      connectedCallback(changedProperties) {
         var shadow =document.getElementsByTagName('com-demo-gauge');
         // var custelem = shadow.host;
         // this.$width = custelem.parentNode.parentNode.parentNode.style.width;
