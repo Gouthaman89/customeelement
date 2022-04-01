@@ -273,22 +273,17 @@
                 mode: "open"
             });
             shadowRoot.appendChild(template.content.cloneNode(true));
-          this.addEventListener("click", event => {
-				var event = new Event("onClick");
-				this.dispatchEvent(event);
-			});
-			
-			this._props = {};
+            this.addEventListener("click", event => {
+	    var event = new Event("onClick");
+	    this.dispatchEvent(event);
+			});			
+	    this._props = {};
             this._init = true;
             this._firstUpdate = true;
             this._firstResize = true;
             this._selectionEvent = false;
-
       }
-         onCustomWidgetAfterUpdate(changedProperties){
-              var shadow =document.getElementsByTagName('com-demo-gauge');
-         }
-        onCustomWidgetAfterUpdate(changedProperties) {
+       onCustomWidgetAfterUpdate(changedProperties) {
 		  var shadow =document.getElementsByTagName('com-demo-gauge');
          let LoadLibs = async function(host, data, props) {
              try {
