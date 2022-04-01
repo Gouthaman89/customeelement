@@ -265,7 +265,7 @@
             pointer-events: none;
         }
     </style>
-    <canvas id="myCanvas" width=auto  height=auto ></canvas>`;
+    <canvas id="myCanvas" width="600px"  height="800px"></canvas>`;
     class FGANTT extends HTMLElement {
       constructor() {
         super();
