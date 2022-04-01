@@ -289,7 +289,18 @@
               var shadow =document.getElementsByTagName('com-demo-gauge');
          }
         onCustomWidgetAfterUpdate(changedProperties) {
-		 var shadow =document.getElementsByTagName('com-demo-gauge');
+		  var shadow =document.getElementsByTagName('com-demo-gauge');
+         let LoadLibs = async function(host, data, props) {
+             try {
+                  await host.loadScript1("https://gouthaman89.github.io/customeelement/docs/moduel2.js", shadow);
+             } catch (e) {
+                 console.log(JSON.stringify(e));
+             } finally {
+               host.drawChart(data, props);
+             }
+         };
+         LoadLibs(this, this.$data, this._props);
+        this._init = false;
 	}
       connectedCallback() {
         var shadow =document.getElementsByTagName('com-demo-gauge');
