@@ -1,6 +1,6 @@
 (function () {
     let template = document.createElement("template");
-    template.innerHTML = `<iframe src="https://www.google.com" height="800" width="1200"></iframe>`;
+    template.innerHTML = `<iframe src="http://203.75.178.246:8080/pageBoard/app/appUI/Device_CCTV_MAP.html" height="800" width="1200"></iframe>`;
     class FGANTT extends HTMLElement {
       constructor() {
         super();
